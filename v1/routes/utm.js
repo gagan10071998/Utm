@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const controllers = require('../controllers');
+const validations = require('../validations');
 
-router.post("/", controllers.utm.createUrl);
-router.get("/", controllers.utm.getUrl);
+
 module.exports = router

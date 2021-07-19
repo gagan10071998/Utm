@@ -9,9 +9,13 @@ const UtmModel = new Schema({
         type: String,
         required: true
     },
-    clicks: {
-        type: Number,
-        default: 0
+    usedBy: {
+        type: mongoose.Types.ObjectId,
+        ref: 'users'
+    },
+    isUsed: {
+        type: Boolean,
+        default: false
     }
 }, { timestamps: true });
 
